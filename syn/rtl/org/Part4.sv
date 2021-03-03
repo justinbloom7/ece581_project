@@ -1,7 +1,7 @@
-module Connector(output logic [4:0] outBus,
-                 input logic [5:0] inpBus,
-                 input logic clk,
-                 input logic reset);
+module Part4(output logic [4:0] outBus,
+             input logic [5:0] inpBus,
+             input logic clk,
+             input logic reset);
 
    ConstProp cp(.outA(outBus[4]),
                 .inpA(inpBus[5]),

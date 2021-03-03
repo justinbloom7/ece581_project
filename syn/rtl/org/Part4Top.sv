@@ -1,4 +1,4 @@
-module Top();
+module Part4Top();
 
    localparam PERIOD = 10;
    localparam RESET_CYCLES = 2;
@@ -8,7 +8,7 @@ module Top();
    logic [5:0] inpBus;
    logic clk, reset;
 
-   Connector dut(.*);
+   Part4 dut(.*);
 
    always @(posedge clk, posedge reset) begin : loopInputs
       if (reset)

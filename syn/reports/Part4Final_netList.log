@@ -1,0 +1,45 @@
+constProp
+- constProp/n_Logic0_
+- constProp/outA
+- constProp/inpA
+- constProp/inpB
+constProp/cp
+- constProp/cp/outA
+- constProp/cp/inpA
+- constProp/cp/inpB
+equalOppProp
+- equalOppProp/outA
+- equalOppProp/outB
+- equalOppProp/inpA
+- equalOppProp/clk
+- equalOppProp/reset
+- equalOppProp/n1
+equalOppProp/eop
+- equalOppProp/eop/dummy[1]
+- equalOppProp/eop/dummy[0]
+- equalOppProp/eop/outA
+- equalOppProp/eop/outB
+- equalOppProp/eop/inpA
+- equalOppProp/eop/clk
+- equalOppProp/eop/reset
+- equalOppProp/eop/n1
+unconnProp
+- unconnProp/outA
+- unconnProp/clk
+- unconnProp/reset
+- unconnProp/n1
+unconnProp/up
+- unconnProp/up/outA
+- unconnProp/up/clk
+- unconnProp/up/reset
+invPush
+- invPush/outA
+- invPush/inpA
+- invPush/clk
+- invPush/reset
+invPush/invP
+- invPush/invP/outA
+- invPush/invP/inpA_BAR
+- invPush/invP/clk
+- invPush/invP/reset
+- invPush/invP/dummy

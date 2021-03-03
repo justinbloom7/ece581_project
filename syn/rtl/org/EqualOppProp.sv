@@ -14,7 +14,7 @@ module EqualOppProp(output logic outA,
       if (reset)
          dummy <= 2'b0;
       else
-         dummy = dummy + 1;
+         dummy <= dummy + 1;
    end
 
 endmodule;

@@ -1,0 +1,34 @@
+ 
+****************************************
+check_design summary:
+Version:     P-2019.03-SP1-1
+Date:        Tue Mar  2 23:28:21 2021
+****************************************
+
+                   Name                                            Total
+--------------------------------------------------------------------------------
+Inputs/Outputs                                                      7
+    Unconnected ports (LINT-28)                                     7
+
+Cells                                                               5
+    Connected to power or ground (LINT-32)                          5
+--------------------------------------------------------------------------------
+
+Warning: In design 'Part4', port 'inpBus[2]' is not connected to any nets. (LINT-28)
+Warning: In design 'Part4', port 'inpBus[1]' is not connected to any nets. (LINT-28)
+Warning: In design 'UnconnPropC', port 'inpA' is not connected to any nets. (LINT-28)
+Warning: In design 'UnconnPropC', port 'inpB' is not connected to any nets. (LINT-28)
+Warning: In design 'ConstProp', port 'inpG' is not connected to any nets. (LINT-28)
+Warning: In design 'EqualOppProp', port 'inpB' is not connected to any nets. (LINT-28)
+Warning: In design 'UnconnProp', port 'inpA' is not connected to any nets. (LINT-28)
+Warning: In design 'Part4', a pin on submodule 'unconnProp' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'inpA' is connected to logic 0. 
+Warning: In design 'Part4', a pin on submodule 'unconnProp' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'inpB' is connected to logic 0. 
+Warning: In design 'ConstPropC', a pin on submodule 'cp' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'inpG' is connected to logic 0. 
+Warning: In design 'EqualOppPropC', a pin on submodule 'eop' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'inpB' is connected to logic 0. 
+Warning: In design 'UnconnPropC', a pin on submodule 'up' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'inpA' is connected to logic 0. 
+1

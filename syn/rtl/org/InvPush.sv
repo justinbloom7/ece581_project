@@ -11,7 +11,7 @@ module InvPush(output logic outA,
       if (reset)
          dummy <= 1'b0;
       else
-         dummy = !dummy;
+         dummy <= !dummy;
    end
 
 endmodule;
