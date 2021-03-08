@@ -40,7 +40,7 @@ module CombCloud #(parameter int FANOUT = 16,
          DecodeChk #(.IO_SIZE(IO_SIZE),
                      .CONST_VALUE(idx)) dchk(.result(combOut[idx]),
                                              .inpBus,
-                                             .enable(!enable));
+                                             .enable);
    endgenerate
 
 endmodule
@@ -51,7 +51,7 @@ module DecodeChk #(parameter int IO_SIZE = 1,
                    input logic [IO_SIZE-1:0] inpBus,
                    input enable);
 
-   assign result = (inpBus == CONST_VALUE) && !enable;
+   assign result = (inpBus == CONST_VALUE) && enable;
 
 endmodule
 
