@@ -15,7 +15,8 @@ if { ! [ info exists top_design ] } {
    set top_design Part7
 }
 
-source ../scripts/dc-get-timlibs.tcl
+#source ../scripts/dc-get-timlibs.tcl
+source ../scripts/dc-get-modlibs.tcl
 
 
 # Analyzing the files for the design
@@ -46,8 +47,7 @@ uniquify
 #compile with ultra features and with scan FFs
 #set_boundary_optimization [ get_cells equalOppProp/eop/dl ] false
 source ../../${top_design}.compile_config.tcl
-#compile_ultra  -scan  -no_autoungroup
-compile_ultra  -scan  -no_autoungroup -no_boundary_optimization
+compile_ultra  -scan  -no_autoungroup
 change_names -rules verilog -hierarchy
 
 # output reports

@@ -18,7 +18,11 @@ if { [info exists synopsys_program_name ] && ($synopsys_program_name == "icc2_sh
 }
 
 
-create_clock -name "clk" -period 6.0 -waveform {0.0 3.0} wclk
+create_clock -name "clk" -period 6.0 -waveform {0.0 3.0} clk
+set_clock_uncertainty -setup 0.07 clk
+set_clock_uncertainty -hold 0.01 clk
+set_clock_transition 0.1 clk
+set_clock_latency 0.1 clk
 
 
 #group_path -name INTERNAL -from [all_clocks] -to [all_clocks ]

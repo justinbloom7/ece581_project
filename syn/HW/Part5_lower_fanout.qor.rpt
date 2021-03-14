@@ -1,0 +1,100 @@
+Information: Changed wire load model for 'DW01_add_width8' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*ADD_UNS_OP_6_7_8' from '(none)' to 'ForQA'. (OPT-170)
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : qor
+Design : Part5
+Version: P-2019.03-SP1-1
+Date   : Sat Mar 13 17:01:42 2021
+****************************************
+
+
+  Timing Path Group 'INPUTS'
+  -----------------------------------
+  Levels of Logic:               2.00
+  Critical Path Length:          3.82
+  Critical Path Slack:           1.17
+  Critical Path Clk Period:      5.00
+  Total Negative Slack:          0.00
+  No. of Violating Paths:        0.00
+  Worst Hold Violation:         -0.40
+  Total Hold Violation:         -1.59
+  No. of Hold Violations:        4.00
+  -----------------------------------
+
+  Timing Path Group 'OUTPUTS'
+  -----------------------------------
+  Levels of Logic:               0.00
+  Critical Path Length:          0.64
+  Critical Path Slack:           4.29
+  Critical Path Clk Period:      5.00
+  Total Negative Slack:          0.00
+  No. of Violating Paths:        0.00
+  Worst Hold Violation:          0.00
+  Total Hold Violation:          0.00
+  No. of Hold Violations:        0.00
+  -----------------------------------
+
+
+  Cell Count
+  -----------------------------------
+  Hierarchical Cell Count:         69
+  Hierarchical Port Count:        761
+  Leaf Cell Count:                258
+  Buf/Inv Cell Count:              52
+  Buf Cell Count:                   0
+  Inv Cell Count:                  52
+  CT Buf/Inv Cell Count:            0
+  Combinational Cell Count:       194
+  Sequential Cell Count:           64
+  Macro Count:                      0
+  -----------------------------------
+
+
+  Area
+  -----------------------------------
+  Combinational Area:      523.282491
+  Noncombinational Area:   585.547791
+  Buf/Inv Area:             70.652032
+  Total Buffer Area:             0.00
+  Total Inverter Area:          70.65
+  Macro/Black Box Area:      0.000000
+  Net Area:                168.114979
+  -----------------------------------
+  Cell Area:              1108.830281
+  Design Area:            1276.945260
+
+
+  Design Rules
+  -----------------------------------
+  Total Number of Nets:           405
+  Nets With Violations:             1
+  Max Trans Violations:             0
+  Max Cap Violations:               0
+  Max Fanout Violations:            1
+  -----------------------------------
+
+
+  Hostname: mo.ece.pdx.edu
+
+  Compile CPU Statistics
+  -----------------------------------------
+  Resource Sharing:                    0.08
+  Logic Optimization:                  2.97
+  Mapping Optimization:               13.77
+  -----------------------------------------
+  Overall Compile Time:               66.53
+  Overall Compile Wall Clock Time:    68.47
+
+  --------------------------------------------------------------------
+
+  Design  WNS: 0.00  TNS: 0.00  Number of Violating Paths: 0
+
+
+  Design (Hold)  WNS: 0.40  TNS: 1.59  Number of Violating Paths: 4
+
+  --------------------------------------------------------------------
+
+
+1

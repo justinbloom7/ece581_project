@@ -10,10 +10,9 @@ module Part5 #(parameter int FANOUT = 64,
    logic [FANOUT-1:0] combOut;
    logic criticalOut;
 
-   always_ff @(posedge clk) begin
-      outBus[FANOUT-1:1] <= combOut[FANOUT-1:1];
-      outBus[0] <= criticalOut;
-   end
+   BigReg #(.FANOUT(FANOUT)) breg (.regOut(outBus),
+                                   .regIn( { combOut[FANOUT-1:1], criticalOut }),
+                                   .clk);
 
    CombCloud #(.FANOUT(FANOUT),
                .IO_SIZE(IO_SIZE)) ccloud (.combOut,
@@ -22,6 +21,17 @@ module Part5 #(parameter int FANOUT = 64,
 
    Criticalizer critical0(.result(criticalOut),
                           .inpValue(combOut[0]));
+
+endmodule
+
+module BigReg #(parameter int FANOUT = 16)
+               (output logic [FANOUT-1:0] regOut,
+                input logic [FANOUT-1:0] regIn,
+                input logic clk);
+
+   always_ff @(posedge clk) begin
+      regOut <= regIn;
+   end
 
 endmodule
 

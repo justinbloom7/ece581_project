@@ -1,0 +1,1188 @@
+/////////////////////////////////////////////////////////////
+// Created by: Synopsys DC Ultra(TM) in wire load mode
+// Version   : P-2019.03-SP1-1
+// Date      : Sat Mar 13 17:01:43 2021
+/////////////////////////////////////////////////////////////
+
+
+module BigReg_FANOUT64 ( regOut, regIn, clk );
+  output [63:0] regOut;
+  input [63:0] regIn;
+  input clk;
+
+
+  SDFFARX1_HVT regOut_reg_63_ ( .D(regIn[63]), .SI(1'b0), .SE(1'b0), .CLK(clk), 
+        .RSTB(1'b1), .Q(regOut[63]) );
+  SDFFARX1_HVT regOut_reg_62_ ( .D(regIn[62]), .SI(1'b0), .SE(1'b0), .CLK(clk), 
+        .RSTB(1'b1), .Q(regOut[62]) );
+  SDFFARX1_HVT regOut_reg_61_ ( .D(regIn[61]), .SI(1'b0), .SE(1'b0), .CLK(clk), 
+        .RSTB(1'b1), .Q(regOut[61]) );
+  SDFFARX1_HVT regOut_reg_60_ ( .D(regIn[60]), .SI(1'b0), .SE(1'b0), .CLK(clk), 
+        .RSTB(1'b1), .Q(regOut[60]) );
+  SDFFARX1_HVT regOut_reg_59_ ( .D(regIn[59]), .SI(1'b0), .SE(1'b0), .CLK(clk), 
+        .RSTB(1'b1), .Q(regOut[59]) );
+  SDFFARX1_HVT regOut_reg_58_ ( .D(regIn[58]), .SI(1'b0), .SE(1'b0), .CLK(clk), 
+        .RSTB(1'b1), .Q(regOut[58]) );
+  SDFFARX1_HVT regOut_reg_57_ ( .D(regIn[57]), .SI(1'b0), .SE(1'b0), .CLK(clk), 
+        .RSTB(1'b1), .Q(regOut[57]) );
+  SDFFARX1_HVT regOut_reg_56_ ( .D(regIn[56]), .SI(1'b0), .SE(1'b0), .CLK(clk), 
+        .RSTB(1'b1), .Q(regOut[56]) );
+  SDFFARX1_HVT regOut_reg_55_ ( .D(regIn[55]), .SI(1'b0), .SE(1'b0), .CLK(clk), 
+        .RSTB(1'b1), .Q(regOut[55]) );
+  SDFFARX1_HVT regOut_reg_54_ ( .D(regIn[54]), .SI(1'b0), .SE(1'b0), .CLK(clk), 
+        .RSTB(1'b1), .Q(regOut[54]) );
+  SDFFARX1_HVT regOut_reg_53_ ( .D(regIn[53]), .SI(1'b0), .SE(1'b0), .CLK(clk), 
+        .RSTB(1'b1), .Q(regOut[53]) );
+  SDFFARX1_HVT regOut_reg_52_ ( .D(regIn[52]), .SI(1'b0), .SE(1'b0), .CLK(clk), 
+        .RSTB(1'b1), .Q(regOut[52]) );
+  SDFFARX1_HVT regOut_reg_51_ ( .D(regIn[51]), .SI(1'b0), .SE(1'b0), .CLK(clk), 
+        .RSTB(1'b1), .Q(regOut[51]) );
+  SDFFARX1_HVT regOut_reg_50_ ( .D(regIn[50]), .SI(1'b0), .SE(1'b0), .CLK(clk), 
+        .RSTB(1'b1), .Q(regOut[50]) );
+  SDFFARX1_HVT regOut_reg_49_ ( .D(regIn[49]), .SI(1'b0), .SE(1'b0), .CLK(clk), 
+        .RSTB(1'b1), .Q(regOut[49]) );
+  SDFFARX1_HVT regOut_reg_48_ ( .D(regIn[48]), .SI(1'b0), .SE(1'b0), .CLK(clk), 
+        .RSTB(1'b1), .Q(regOut[48]) );
+  SDFFARX1_HVT regOut_reg_47_ ( .D(regIn[47]), .SI(1'b0), .SE(1'b0), .CLK(clk), 
+        .RSTB(1'b1), .Q(regOut[47]) );
+  SDFFARX1_HVT regOut_reg_46_ ( .D(regIn[46]), .SI(1'b0), .SE(1'b0), .CLK(clk), 
+        .RSTB(1'b1), .Q(regOut[46]) );
+  SDFFARX1_HVT regOut_reg_45_ ( .D(regIn[45]), .SI(1'b0), .SE(1'b0), .CLK(clk), 
+        .RSTB(1'b1), .Q(regOut[45]) );
+  SDFFARX1_HVT regOut_reg_44_ ( .D(regIn[44]), .SI(1'b0), .SE(1'b0), .CLK(clk), 
+        .RSTB(1'b1), .Q(regOut[44]) );
+  SDFFARX1_HVT regOut_reg_43_ ( .D(regIn[43]), .SI(1'b0), .SE(1'b0), .CLK(clk), 
+        .RSTB(1'b1), .Q(regOut[43]) );
+  SDFFARX1_HVT regOut_reg_42_ ( .D(regIn[42]), .SI(1'b0), .SE(1'b0), .CLK(clk), 
+        .RSTB(1'b1), .Q(regOut[42]) );
+  SDFFARX1_HVT regOut_reg_41_ ( .D(regIn[41]), .SI(1'b0), .SE(1'b0), .CLK(clk), 
+        .RSTB(1'b1), .Q(regOut[41]) );
+  SDFFARX1_HVT regOut_reg_40_ ( .D(regIn[40]), .SI(1'b0), .SE(1'b0), .CLK(clk), 
+        .RSTB(1'b1), .Q(regOut[40]) );
+  SDFFARX1_HVT regOut_reg_39_ ( .D(regIn[39]), .SI(1'b0), .SE(1'b0), .CLK(clk), 
+        .RSTB(1'b1), .Q(regOut[39]) );
+  SDFFARX1_HVT regOut_reg_38_ ( .D(regIn[38]), .SI(1'b0), .SE(1'b0), .CLK(clk), 
+        .RSTB(1'b1), .Q(regOut[38]) );
+  SDFFARX1_HVT regOut_reg_37_ ( .D(regIn[37]), .SI(1'b0), .SE(1'b0), .CLK(clk), 
+        .RSTB(1'b1), .Q(regOut[37]) );
+  SDFFARX1_HVT regOut_reg_36_ ( .D(regIn[36]), .SI(1'b0), .SE(1'b0), .CLK(clk), 
+        .RSTB(1'b1), .Q(regOut[36]) );
+  SDFFARX1_HVT regOut_reg_35_ ( .D(regIn[35]), .SI(1'b0), .SE(1'b0), .CLK(clk), 
+        .RSTB(1'b1), .Q(regOut[35]) );
+  SDFFARX1_HVT regOut_reg_34_ ( .D(regIn[34]), .SI(1'b0), .SE(1'b0), .CLK(clk), 
+        .RSTB(1'b1), .Q(regOut[34]) );
+  SDFFARX1_HVT regOut_reg_33_ ( .D(regIn[33]), .SI(1'b0), .SE(1'b0), .CLK(clk), 
+        .RSTB(1'b1), .Q(regOut[33]) );
+  SDFFARX1_HVT regOut_reg_32_ ( .D(regIn[32]), .SI(1'b0), .SE(1'b0), .CLK(clk), 
+        .RSTB(1'b1), .Q(regOut[32]) );
+  SDFFARX1_HVT regOut_reg_31_ ( .D(regIn[31]), .SI(1'b0), .SE(1'b0), .CLK(clk), 
+        .RSTB(1'b1), .Q(regOut[31]) );
+  SDFFARX1_HVT regOut_reg_30_ ( .D(regIn[30]), .SI(1'b0), .SE(1'b0), .CLK(clk), 
+        .RSTB(1'b1), .Q(regOut[30]) );
+  SDFFARX1_HVT regOut_reg_29_ ( .D(regIn[29]), .SI(1'b0), .SE(1'b0), .CLK(clk), 
+        .RSTB(1'b1), .Q(regOut[29]) );
+  SDFFARX1_HVT regOut_reg_28_ ( .D(regIn[28]), .SI(1'b0), .SE(1'b0), .CLK(clk), 
+        .RSTB(1'b1), .Q(regOut[28]) );
+  SDFFARX1_HVT regOut_reg_27_ ( .D(regIn[27]), .SI(1'b0), .SE(1'b0), .CLK(clk), 
+        .RSTB(1'b1), .Q(regOut[27]) );
+  SDFFARX1_HVT regOut_reg_26_ ( .D(regIn[26]), .SI(1'b0), .SE(1'b0), .CLK(clk), 
+        .RSTB(1'b1), .Q(regOut[26]) );
+  SDFFARX1_HVT regOut_reg_25_ ( .D(regIn[25]), .SI(1'b0), .SE(1'b0), .CLK(clk), 
+        .RSTB(1'b1), .Q(regOut[25]) );
+  SDFFARX1_HVT regOut_reg_24_ ( .D(regIn[24]), .SI(1'b0), .SE(1'b0), .CLK(clk), 
+        .RSTB(1'b1), .Q(regOut[24]) );
+  SDFFARX1_HVT regOut_reg_23_ ( .D(regIn[23]), .SI(1'b0), .SE(1'b0), .CLK(clk), 
+        .RSTB(1'b1), .Q(regOut[23]) );
+  SDFFARX1_HVT regOut_reg_22_ ( .D(regIn[22]), .SI(1'b0), .SE(1'b0), .CLK(clk), 
+        .RSTB(1'b1), .Q(regOut[22]) );
+  SDFFARX1_HVT regOut_reg_21_ ( .D(regIn[21]), .SI(1'b0), .SE(1'b0), .CLK(clk), 
+        .RSTB(1'b1), .Q(regOut[21]) );
+  SDFFARX1_HVT regOut_reg_20_ ( .D(regIn[20]), .SI(1'b0), .SE(1'b0), .CLK(clk), 
+        .RSTB(1'b1), .Q(regOut[20]) );
+  SDFFARX1_HVT regOut_reg_19_ ( .D(regIn[19]), .SI(1'b0), .SE(1'b0), .CLK(clk), 
+        .RSTB(1'b1), .Q(regOut[19]) );
+  SDFFARX1_HVT regOut_reg_18_ ( .D(regIn[18]), .SI(1'b0), .SE(1'b0), .CLK(clk), 
+        .RSTB(1'b1), .Q(regOut[18]) );
+  SDFFARX1_HVT regOut_reg_17_ ( .D(regIn[17]), .SI(1'b0), .SE(1'b0), .CLK(clk), 
+        .RSTB(1'b1), .Q(regOut[17]) );
+  SDFFARX1_HVT regOut_reg_16_ ( .D(regIn[16]), .SI(1'b0), .SE(1'b0), .CLK(clk), 
+        .RSTB(1'b1), .Q(regOut[16]) );
+  SDFFARX1_HVT regOut_reg_15_ ( .D(regIn[15]), .SI(1'b0), .SE(1'b0), .CLK(clk), 
+        .RSTB(1'b1), .Q(regOut[15]) );
+  SDFFARX1_HVT regOut_reg_14_ ( .D(regIn[14]), .SI(1'b0), .SE(1'b0), .CLK(clk), 
+        .RSTB(1'b1), .Q(regOut[14]) );
+  SDFFARX1_HVT regOut_reg_13_ ( .D(regIn[13]), .SI(1'b0), .SE(1'b0), .CLK(clk), 
+        .RSTB(1'b1), .Q(regOut[13]) );
+  SDFFARX1_HVT regOut_reg_12_ ( .D(regIn[12]), .SI(1'b0), .SE(1'b0), .CLK(clk), 
+        .RSTB(1'b1), .Q(regOut[12]) );
+  SDFFARX1_HVT regOut_reg_11_ ( .D(regIn[11]), .SI(1'b0), .SE(1'b0), .CLK(clk), 
+        .RSTB(1'b1), .Q(regOut[11]) );
+  SDFFARX1_HVT regOut_reg_10_ ( .D(regIn[10]), .SI(1'b0), .SE(1'b0), .CLK(clk), 
+        .RSTB(1'b1), .Q(regOut[10]) );
+  SDFFARX1_HVT regOut_reg_9_ ( .D(regIn[9]), .SI(1'b0), .SE(1'b0), .CLK(clk), 
+        .RSTB(1'b1), .Q(regOut[9]) );
+  SDFFARX1_HVT regOut_reg_8_ ( .D(regIn[8]), .SI(1'b0), .SE(1'b0), .CLK(clk), 
+        .RSTB(1'b1), .Q(regOut[8]) );
+  SDFFARX1_HVT regOut_reg_7_ ( .D(regIn[7]), .SI(1'b0), .SE(1'b0), .CLK(clk), 
+        .RSTB(1'b1), .Q(regOut[7]) );
+  SDFFARX1_HVT regOut_reg_6_ ( .D(regIn[6]), .SI(1'b0), .SE(1'b0), .CLK(clk), 
+        .RSTB(1'b1), .Q(regOut[6]) );
+  SDFFARX1_HVT regOut_reg_5_ ( .D(regIn[5]), .SI(1'b0), .SE(1'b0), .CLK(clk), 
+        .RSTB(1'b1), .Q(regOut[5]) );
+  SDFFARX1_HVT regOut_reg_4_ ( .D(regIn[4]), .SI(1'b0), .SE(1'b0), .CLK(clk), 
+        .RSTB(1'b1), .Q(regOut[4]) );
+  SDFFARX1_HVT regOut_reg_3_ ( .D(regIn[3]), .SI(1'b0), .SE(1'b0), .CLK(clk), 
+        .RSTB(1'b1), .Q(regOut[3]) );
+  SDFFARX1_HVT regOut_reg_2_ ( .D(regIn[2]), .SI(1'b0), .SE(1'b0), .CLK(clk), 
+        .RSTB(1'b1), .Q(regOut[2]) );
+  SDFFARX1_HVT regOut_reg_1_ ( .D(regIn[1]), .SI(1'b0), .SE(1'b0), .CLK(clk), 
+        .RSTB(1'b1), .Q(regOut[1]) );
+  SDFFARX1_HVT regOut_reg_0_ ( .D(regIn[0]), .SI(1'b0), .SE(1'b0), .CLK(clk), 
+        .RSTB(1'b1), .Q(regOut[0]) );
+endmodule
+
+
+module DecodeChk_IO_SIZE6_CONST_VALUE0 ( result, inpBus, enable );
+  input [5:0] inpBus;
+  input enable;
+  output result;
+  wire   n1, n2;
+
+  NAND2X1_HVT U1 ( .A1(enable), .A2(n1), .Y(n2) );
+  NOR3X0_HVT U2 ( .A1(inpBus[3]), .A2(inpBus[5]), .A3(inpBus[4]), .Y(n1) );
+  NOR4X0_HVT U3 ( .A1(inpBus[0]), .A2(inpBus[2]), .A3(inpBus[1]), .A4(n2), .Y(
+        result) );
+endmodule
+
+
+module DecodeChk_IO_SIZE6_CONST_VALUE1 ( result, inpBus, enable );
+  input [5:0] inpBus;
+  input enable;
+  output result;
+  wire   n1, n2;
+
+  INVX0_HVT U1 ( .A(inpBus[1]), .Y(n1) );
+  AND4X2_HVT U2 ( .A1(enable), .A2(inpBus[0]), .A3(n2), .A4(n1), .Y(result) );
+  NOR4X0_HVT U3 ( .A1(inpBus[2]), .A2(inpBus[3]), .A3(inpBus[4]), .A4(
+        inpBus[5]), .Y(n2) );
+endmodule
+
+
+module DecodeChk_IO_SIZE6_CONST_VALUE2 ( result, inpBus, enable );
+  input [5:0] inpBus;
+  input enable;
+  output result;
+  wire   n1, n2;
+
+  INVX0_HVT U1 ( .A(inpBus[0]), .Y(n1) );
+  AND4X2_HVT U2 ( .A1(enable), .A2(inpBus[1]), .A3(n2), .A4(n1), .Y(result) );
+  NOR4X0_HVT U3 ( .A1(inpBus[2]), .A2(inpBus[3]), .A3(inpBus[4]), .A4(
+        inpBus[5]), .Y(n2) );
+endmodule
+
+
+module DecodeChk_IO_SIZE6_CONST_VALUE3 ( result, inpBus, enable );
+  input [5:0] inpBus;
+  input enable;
+  output result;
+  wire   n1;
+
+  AND4X2_HVT U1 ( .A1(inpBus[0]), .A2(inpBus[1]), .A3(enable), .A4(n1), .Y(
+        result) );
+  NOR4X0_HVT U2 ( .A1(inpBus[2]), .A2(inpBus[3]), .A3(inpBus[4]), .A4(
+        inpBus[5]), .Y(n1) );
+endmodule
+
+
+module DecodeChk_IO_SIZE6_CONST_VALUE4 ( result, inpBus, enable );
+  input [5:0] inpBus;
+  input enable;
+  output result;
+  wire   n1, n2;
+
+  INVX0_HVT U1 ( .A(inpBus[0]), .Y(n1) );
+  AND4X2_HVT U2 ( .A1(enable), .A2(inpBus[2]), .A3(n2), .A4(n1), .Y(result) );
+  NOR4X0_HVT U3 ( .A1(inpBus[1]), .A2(inpBus[3]), .A3(inpBus[4]), .A4(
+        inpBus[5]), .Y(n2) );
+endmodule
+
+
+module DecodeChk_IO_SIZE6_CONST_VALUE5 ( result, inpBus, enable );
+  input [5:0] inpBus;
+  input enable;
+  output result;
+  wire   n1;
+
+  AND4X2_HVT U1 ( .A1(inpBus[0]), .A2(inpBus[2]), .A3(enable), .A4(n1), .Y(
+        result) );
+  NOR4X0_HVT U2 ( .A1(inpBus[1]), .A2(inpBus[3]), .A3(inpBus[4]), .A4(
+        inpBus[5]), .Y(n1) );
+endmodule
+
+
+module DecodeChk_IO_SIZE6_CONST_VALUE6 ( result, inpBus, enable );
+  input [5:0] inpBus;
+  input enable;
+  output result;
+  wire   n1;
+
+  AND4X2_HVT U1 ( .A1(inpBus[1]), .A2(inpBus[2]), .A3(enable), .A4(n1), .Y(
+        result) );
+  NOR4X0_HVT U2 ( .A1(inpBus[0]), .A2(inpBus[3]), .A3(inpBus[4]), .A4(
+        inpBus[5]), .Y(n1) );
+endmodule
+
+
+module DecodeChk_IO_SIZE6_CONST_VALUE7 ( result, inpBus, enable );
+  input [5:0] inpBus;
+  input enable;
+  output result;
+  wire   n1, n2;
+
+  INVX0_HVT U1 ( .A(inpBus[2]), .Y(n1) );
+  AND4X2_HVT U2 ( .A1(enable), .A2(inpBus[0]), .A3(inpBus[1]), .A4(n2), .Y(
+        result) );
+  NOR4X0_HVT U3 ( .A1(inpBus[3]), .A2(inpBus[4]), .A3(inpBus[5]), .A4(n1), .Y(
+        n2) );
+endmodule
+
+
+module DecodeChk_IO_SIZE6_CONST_VALUE8 ( result, inpBus, enable );
+  input [5:0] inpBus;
+  input enable;
+  output result;
+  wire   n1, n2;
+
+  INVX0_HVT U1 ( .A(inpBus[0]), .Y(n1) );
+  AND4X2_HVT U2 ( .A1(enable), .A2(inpBus[3]), .A3(n2), .A4(n1), .Y(result) );
+  NOR4X0_HVT U3 ( .A1(inpBus[1]), .A2(inpBus[2]), .A3(inpBus[4]), .A4(
+        inpBus[5]), .Y(n2) );
+endmodule
+
+
+module DecodeChk_IO_SIZE6_CONST_VALUE9 ( result, inpBus, enable );
+  input [5:0] inpBus;
+  input enable;
+  output result;
+  wire   n1;
+
+  AND4X2_HVT U1 ( .A1(inpBus[0]), .A2(inpBus[3]), .A3(enable), .A4(n1), .Y(
+        result) );
+  NOR4X0_HVT U2 ( .A1(inpBus[1]), .A2(inpBus[2]), .A3(inpBus[4]), .A4(
+        inpBus[5]), .Y(n1) );
+endmodule
+
+
+module DecodeChk_IO_SIZE6_CONST_VALUE10 ( result, inpBus, enable );
+  input [5:0] inpBus;
+  input enable;
+  output result;
+  wire   n1;
+
+  AND4X2_HVT U1 ( .A1(inpBus[1]), .A2(inpBus[3]), .A3(enable), .A4(n1), .Y(
+        result) );
+  NOR4X0_HVT U2 ( .A1(inpBus[0]), .A2(inpBus[2]), .A3(inpBus[4]), .A4(
+        inpBus[5]), .Y(n1) );
+endmodule
+
+
+module DecodeChk_IO_SIZE6_CONST_VALUE11 ( result, inpBus, enable );
+  input [5:0] inpBus;
+  input enable;
+  output result;
+  wire   n1, n2;
+
+  INVX0_HVT U1 ( .A(inpBus[3]), .Y(n1) );
+  AND4X2_HVT U2 ( .A1(enable), .A2(inpBus[0]), .A3(inpBus[1]), .A4(n2), .Y(
+        result) );
+  NOR4X0_HVT U3 ( .A1(inpBus[2]), .A2(inpBus[4]), .A3(inpBus[5]), .A4(n1), .Y(
+        n2) );
+endmodule
+
+
+module DecodeChk_IO_SIZE6_CONST_VALUE12 ( result, inpBus, enable );
+  input [5:0] inpBus;
+  input enable;
+  output result;
+  wire   n1;
+
+  AND4X2_HVT U1 ( .A1(inpBus[2]), .A2(inpBus[3]), .A3(enable), .A4(n1), .Y(
+        result) );
+  NOR4X0_HVT U2 ( .A1(inpBus[0]), .A2(inpBus[1]), .A3(inpBus[4]), .A4(
+        inpBus[5]), .Y(n1) );
+endmodule
+
+
+module DecodeChk_IO_SIZE6_CONST_VALUE13 ( result, inpBus, enable );
+  input [5:0] inpBus;
+  input enable;
+  output result;
+  wire   n1, n2;
+
+  INVX0_HVT U1 ( .A(inpBus[3]), .Y(n1) );
+  AND4X2_HVT U2 ( .A1(enable), .A2(inpBus[0]), .A3(inpBus[2]), .A4(n2), .Y(
+        result) );
+  NOR4X0_HVT U3 ( .A1(inpBus[1]), .A2(inpBus[4]), .A3(inpBus[5]), .A4(n1), .Y(
+        n2) );
+endmodule
+
+
+module DecodeChk_IO_SIZE6_CONST_VALUE14 ( result, inpBus, enable );
+  input [5:0] inpBus;
+  input enable;
+  output result;
+  wire   n1, n2;
+
+  INVX0_HVT U1 ( .A(inpBus[3]), .Y(n1) );
+  AND4X2_HVT U2 ( .A1(enable), .A2(inpBus[1]), .A3(inpBus[2]), .A4(n2), .Y(
+        result) );
+  NOR4X0_HVT U3 ( .A1(inpBus[0]), .A2(inpBus[4]), .A3(inpBus[5]), .A4(n1), .Y(
+        n2) );
+endmodule
+
+
+module DecodeChk_IO_SIZE6_CONST_VALUE15 ( result, inpBus, enable );
+  input [5:0] inpBus;
+  input enable;
+  output result;
+  wire   n1, n2;
+
+  NAND4X1_HVT U1 ( .A1(enable), .A2(inpBus[0]), .A3(inpBus[1]), .A4(inpBus[2]), 
+        .Y(n1) );
+  INVX0_HVT U2 ( .A(inpBus[3]), .Y(n2) );
+  NOR4X0_HVT U3 ( .A1(inpBus[4]), .A2(inpBus[5]), .A3(n2), .A4(n1), .Y(result)
+         );
+endmodule
+
+
+module DecodeChk_IO_SIZE6_CONST_VALUE16 ( result, inpBus, enable );
+  input [5:0] inpBus;
+  input enable;
+  output result;
+  wire   n1, n2;
+
+  INVX0_HVT U1 ( .A(inpBus[0]), .Y(n1) );
+  AND4X2_HVT U2 ( .A1(enable), .A2(inpBus[4]), .A3(n2), .A4(n1), .Y(result) );
+  NOR4X0_HVT U3 ( .A1(inpBus[1]), .A2(inpBus[2]), .A3(inpBus[3]), .A4(
+        inpBus[5]), .Y(n2) );
+endmodule
+
+
+module DecodeChk_IO_SIZE6_CONST_VALUE17 ( result, inpBus, enable );
+  input [5:0] inpBus;
+  input enable;
+  output result;
+  wire   n1;
+
+  AND4X2_HVT U1 ( .A1(inpBus[0]), .A2(inpBus[4]), .A3(enable), .A4(n1), .Y(
+        result) );
+  NOR4X0_HVT U2 ( .A1(inpBus[1]), .A2(inpBus[2]), .A3(inpBus[3]), .A4(
+        inpBus[5]), .Y(n1) );
+endmodule
+
+
+module DecodeChk_IO_SIZE6_CONST_VALUE18 ( result, inpBus, enable );
+  input [5:0] inpBus;
+  input enable;
+  output result;
+  wire   n1;
+
+  AND4X2_HVT U1 ( .A1(inpBus[1]), .A2(inpBus[4]), .A3(enable), .A4(n1), .Y(
+        result) );
+  NOR4X0_HVT U2 ( .A1(inpBus[0]), .A2(inpBus[2]), .A3(inpBus[3]), .A4(
+        inpBus[5]), .Y(n1) );
+endmodule
+
+
+module DecodeChk_IO_SIZE6_CONST_VALUE19 ( result, inpBus, enable );
+  input [5:0] inpBus;
+  input enable;
+  output result;
+  wire   n1, n2;
+
+  INVX0_HVT U1 ( .A(inpBus[4]), .Y(n1) );
+  AND4X2_HVT U2 ( .A1(enable), .A2(inpBus[0]), .A3(inpBus[1]), .A4(n2), .Y(
+        result) );
+  NOR4X0_HVT U3 ( .A1(inpBus[2]), .A2(inpBus[3]), .A3(inpBus[5]), .A4(n1), .Y(
+        n2) );
+endmodule
+
+
+module DecodeChk_IO_SIZE6_CONST_VALUE20 ( result, inpBus, enable );
+  input [5:0] inpBus;
+  input enable;
+  output result;
+  wire   n1;
+
+  AND4X2_HVT U1 ( .A1(inpBus[2]), .A2(inpBus[4]), .A3(enable), .A4(n1), .Y(
+        result) );
+  NOR4X0_HVT U2 ( .A1(inpBus[0]), .A2(inpBus[1]), .A3(inpBus[3]), .A4(
+        inpBus[5]), .Y(n1) );
+endmodule
+
+
+module DecodeChk_IO_SIZE6_CONST_VALUE21 ( result, inpBus, enable );
+  input [5:0] inpBus;
+  input enable;
+  output result;
+  wire   n1, n2;
+
+  INVX0_HVT U1 ( .A(inpBus[4]), .Y(n1) );
+  AND4X2_HVT U2 ( .A1(enable), .A2(inpBus[0]), .A3(inpBus[2]), .A4(n2), .Y(
+        result) );
+  NOR4X0_HVT U3 ( .A1(inpBus[1]), .A2(inpBus[3]), .A3(inpBus[5]), .A4(n1), .Y(
+        n2) );
+endmodule
+
+
+module DecodeChk_IO_SIZE6_CONST_VALUE22 ( result, inpBus, enable );
+  input [5:0] inpBus;
+  input enable;
+  output result;
+  wire   n1, n2;
+
+  INVX0_HVT U1 ( .A(inpBus[4]), .Y(n1) );
+  AND4X2_HVT U2 ( .A1(enable), .A2(inpBus[1]), .A3(inpBus[2]), .A4(n2), .Y(
+        result) );
+  NOR4X0_HVT U3 ( .A1(inpBus[0]), .A2(inpBus[3]), .A3(inpBus[5]), .A4(n1), .Y(
+        n2) );
+endmodule
+
+
+module DecodeChk_IO_SIZE6_CONST_VALUE23 ( result, inpBus, enable );
+  input [5:0] inpBus;
+  input enable;
+  output result;
+  wire   n1, n2;
+
+  NAND4X1_HVT U1 ( .A1(enable), .A2(inpBus[0]), .A3(inpBus[1]), .A4(inpBus[2]), 
+        .Y(n1) );
+  INVX0_HVT U2 ( .A(inpBus[4]), .Y(n2) );
+  NOR4X0_HVT U3 ( .A1(inpBus[3]), .A2(inpBus[5]), .A3(n2), .A4(n1), .Y(result)
+         );
+endmodule
+
+
+module DecodeChk_IO_SIZE6_CONST_VALUE24 ( result, inpBus, enable );
+  input [5:0] inpBus;
+  input enable;
+  output result;
+  wire   n1;
+
+  AND4X2_HVT U1 ( .A1(inpBus[3]), .A2(inpBus[4]), .A3(enable), .A4(n1), .Y(
+        result) );
+  NOR4X0_HVT U2 ( .A1(inpBus[0]), .A2(inpBus[1]), .A3(inpBus[2]), .A4(
+        inpBus[5]), .Y(n1) );
+endmodule
+
+
+module DecodeChk_IO_SIZE6_CONST_VALUE25 ( result, inpBus, enable );
+  input [5:0] inpBus;
+  input enable;
+  output result;
+  wire   n1, n2;
+
+  INVX0_HVT U1 ( .A(inpBus[4]), .Y(n1) );
+  AND4X2_HVT U2 ( .A1(enable), .A2(inpBus[0]), .A3(inpBus[3]), .A4(n2), .Y(
+        result) );
+  NOR4X0_HVT U3 ( .A1(inpBus[1]), .A2(inpBus[2]), .A3(inpBus[5]), .A4(n1), .Y(
+        n2) );
+endmodule
+
+
+module DecodeChk_IO_SIZE6_CONST_VALUE26 ( result, inpBus, enable );
+  input [5:0] inpBus;
+  input enable;
+  output result;
+  wire   n1, n2;
+
+  INVX0_HVT U1 ( .A(inpBus[4]), .Y(n1) );
+  AND4X2_HVT U2 ( .A1(enable), .A2(inpBus[1]), .A3(inpBus[3]), .A4(n2), .Y(
+        result) );
+  NOR4X0_HVT U3 ( .A1(inpBus[0]), .A2(inpBus[2]), .A3(inpBus[5]), .A4(n1), .Y(
+        n2) );
+endmodule
+
+
+module DecodeChk_IO_SIZE6_CONST_VALUE27 ( result, inpBus, enable );
+  input [5:0] inpBus;
+  input enable;
+  output result;
+  wire   n1, n2;
+
+  NAND4X1_HVT U1 ( .A1(enable), .A2(inpBus[0]), .A3(inpBus[1]), .A4(inpBus[3]), 
+        .Y(n1) );
+  INVX0_HVT U2 ( .A(inpBus[4]), .Y(n2) );
+  NOR4X0_HVT U3 ( .A1(inpBus[2]), .A2(inpBus[5]), .A3(n2), .A4(n1), .Y(result)
+         );
+endmodule
+
+
+module DecodeChk_IO_SIZE6_CONST_VALUE28 ( result, inpBus, enable );
+  input [5:0] inpBus;
+  input enable;
+  output result;
+  wire   n1, n2;
+
+  INVX0_HVT U1 ( .A(inpBus[4]), .Y(n1) );
+  AND4X2_HVT U2 ( .A1(enable), .A2(inpBus[2]), .A3(inpBus[3]), .A4(n2), .Y(
+        result) );
+  NOR4X0_HVT U3 ( .A1(inpBus[0]), .A2(inpBus[1]), .A3(inpBus[5]), .A4(n1), .Y(
+        n2) );
+endmodule
+
+
+module DecodeChk_IO_SIZE6_CONST_VALUE29 ( result, inpBus, enable );
+  input [5:0] inpBus;
+  input enable;
+  output result;
+  wire   n1, n2;
+
+  NAND4X1_HVT U1 ( .A1(enable), .A2(inpBus[0]), .A3(inpBus[2]), .A4(inpBus[3]), 
+        .Y(n1) );
+  INVX0_HVT U2 ( .A(inpBus[4]), .Y(n2) );
+  NOR4X0_HVT U3 ( .A1(inpBus[1]), .A2(inpBus[5]), .A3(n2), .A4(n1), .Y(result)
+         );
+endmodule
+
+
+module DecodeChk_IO_SIZE6_CONST_VALUE30 ( result, inpBus, enable );
+  input [5:0] inpBus;
+  input enable;
+  output result;
+  wire   n1, n2;
+
+  NAND4X1_HVT U1 ( .A1(enable), .A2(inpBus[1]), .A3(inpBus[2]), .A4(inpBus[3]), 
+        .Y(n1) );
+  INVX0_HVT U2 ( .A(inpBus[4]), .Y(n2) );
+  NOR4X0_HVT U3 ( .A1(inpBus[0]), .A2(inpBus[5]), .A3(n2), .A4(n1), .Y(result)
+         );
+endmodule
+
+
+module DecodeChk_IO_SIZE6_CONST_VALUE31 ( result, inpBus, enable );
+  input [5:0] inpBus;
+  input enable;
+  output result;
+  wire   n1, n2;
+
+  INVX0_HVT U1 ( .A(inpBus[5]), .Y(n1) );
+  AND4X1_LVT U2 ( .A1(inpBus[3]), .A2(inpBus[4]), .A3(n2), .A4(n1), .Y(result)
+         );
+  AND4X2_HVT U3 ( .A1(inpBus[0]), .A2(inpBus[2]), .A3(inpBus[1]), .A4(enable), 
+        .Y(n2) );
+endmodule
+
+
+module DecodeChk_IO_SIZE6_CONST_VALUE32 ( result, inpBus, enable );
+  input [5:0] inpBus;
+  input enable;
+  output result;
+  wire   n1, n2;
+
+  INVX0_HVT U1 ( .A(inpBus[0]), .Y(n1) );
+  AND4X2_HVT U2 ( .A1(enable), .A2(inpBus[5]), .A3(n2), .A4(n1), .Y(result) );
+  NOR4X0_HVT U3 ( .A1(inpBus[1]), .A2(inpBus[2]), .A3(inpBus[3]), .A4(
+        inpBus[4]), .Y(n2) );
+endmodule
+
+
+module DecodeChk_IO_SIZE6_CONST_VALUE33 ( result, inpBus, enable );
+  input [5:0] inpBus;
+  input enable;
+  output result;
+  wire   n1;
+
+  AND4X2_HVT U1 ( .A1(inpBus[0]), .A2(inpBus[5]), .A3(enable), .A4(n1), .Y(
+        result) );
+  NOR4X0_HVT U2 ( .A1(inpBus[1]), .A2(inpBus[2]), .A3(inpBus[3]), .A4(
+        inpBus[4]), .Y(n1) );
+endmodule
+
+
+module DecodeChk_IO_SIZE6_CONST_VALUE34 ( result, inpBus, enable );
+  input [5:0] inpBus;
+  input enable;
+  output result;
+  wire   n1;
+
+  AND4X2_HVT U1 ( .A1(inpBus[1]), .A2(inpBus[5]), .A3(enable), .A4(n1), .Y(
+        result) );
+  NOR4X0_HVT U2 ( .A1(inpBus[0]), .A2(inpBus[2]), .A3(inpBus[3]), .A4(
+        inpBus[4]), .Y(n1) );
+endmodule
+
+
+module DecodeChk_IO_SIZE6_CONST_VALUE35 ( result, inpBus, enable );
+  input [5:0] inpBus;
+  input enable;
+  output result;
+  wire   n1, n2;
+
+  INVX0_HVT U1 ( .A(inpBus[5]), .Y(n1) );
+  AND4X2_HVT U2 ( .A1(enable), .A2(inpBus[0]), .A3(inpBus[1]), .A4(n2), .Y(
+        result) );
+  NOR4X0_HVT U3 ( .A1(inpBus[2]), .A2(inpBus[3]), .A3(inpBus[4]), .A4(n1), .Y(
+        n2) );
+endmodule
+
+
+module DecodeChk_IO_SIZE6_CONST_VALUE36 ( result, inpBus, enable );
+  input [5:0] inpBus;
+  input enable;
+  output result;
+  wire   n1;
+
+  AND4X2_HVT U1 ( .A1(inpBus[2]), .A2(inpBus[5]), .A3(enable), .A4(n1), .Y(
+        result) );
+  NOR4X0_HVT U2 ( .A1(inpBus[0]), .A2(inpBus[1]), .A3(inpBus[3]), .A4(
+        inpBus[4]), .Y(n1) );
+endmodule
+
+
+module DecodeChk_IO_SIZE6_CONST_VALUE37 ( result, inpBus, enable );
+  input [5:0] inpBus;
+  input enable;
+  output result;
+  wire   n1, n2;
+
+  INVX0_HVT U1 ( .A(inpBus[5]), .Y(n1) );
+  AND4X2_HVT U2 ( .A1(enable), .A2(inpBus[0]), .A3(inpBus[2]), .A4(n2), .Y(
+        result) );
+  NOR4X0_HVT U3 ( .A1(inpBus[1]), .A2(inpBus[3]), .A3(inpBus[4]), .A4(n1), .Y(
+        n2) );
+endmodule
+
+
+module DecodeChk_IO_SIZE6_CONST_VALUE38 ( result, inpBus, enable );
+  input [5:0] inpBus;
+  input enable;
+  output result;
+  wire   n1, n2;
+
+  INVX0_HVT U1 ( .A(inpBus[5]), .Y(n1) );
+  AND4X2_HVT U2 ( .A1(enable), .A2(inpBus[1]), .A3(inpBus[2]), .A4(n2), .Y(
+        result) );
+  NOR4X0_HVT U3 ( .A1(inpBus[0]), .A2(inpBus[3]), .A3(inpBus[4]), .A4(n1), .Y(
+        n2) );
+endmodule
+
+
+module DecodeChk_IO_SIZE6_CONST_VALUE39 ( result, inpBus, enable );
+  input [5:0] inpBus;
+  input enable;
+  output result;
+  wire   n1, n2;
+
+  NAND4X1_HVT U1 ( .A1(enable), .A2(inpBus[0]), .A3(inpBus[1]), .A4(inpBus[2]), 
+        .Y(n1) );
+  INVX0_HVT U2 ( .A(inpBus[5]), .Y(n2) );
+  NOR4X0_HVT U3 ( .A1(inpBus[3]), .A2(inpBus[4]), .A3(n2), .A4(n1), .Y(result)
+         );
+endmodule
+
+
+module DecodeChk_IO_SIZE6_CONST_VALUE40 ( result, inpBus, enable );
+  input [5:0] inpBus;
+  input enable;
+  output result;
+  wire   n1;
+
+  AND4X2_HVT U1 ( .A1(inpBus[3]), .A2(inpBus[5]), .A3(enable), .A4(n1), .Y(
+        result) );
+  NOR4X0_HVT U2 ( .A1(inpBus[0]), .A2(inpBus[1]), .A3(inpBus[2]), .A4(
+        inpBus[4]), .Y(n1) );
+endmodule
+
+
+module DecodeChk_IO_SIZE6_CONST_VALUE41 ( result, inpBus, enable );
+  input [5:0] inpBus;
+  input enable;
+  output result;
+  wire   n1, n2;
+
+  INVX0_HVT U1 ( .A(inpBus[5]), .Y(n1) );
+  AND4X2_HVT U2 ( .A1(enable), .A2(inpBus[0]), .A3(inpBus[3]), .A4(n2), .Y(
+        result) );
+  NOR4X0_HVT U3 ( .A1(inpBus[1]), .A2(inpBus[2]), .A3(inpBus[4]), .A4(n1), .Y(
+        n2) );
+endmodule
+
+
+module DecodeChk_IO_SIZE6_CONST_VALUE42 ( result, inpBus, enable );
+  input [5:0] inpBus;
+  input enable;
+  output result;
+  wire   n1, n2;
+
+  INVX0_HVT U1 ( .A(inpBus[5]), .Y(n1) );
+  AND4X2_HVT U2 ( .A1(enable), .A2(inpBus[1]), .A3(inpBus[3]), .A4(n2), .Y(
+        result) );
+  NOR4X0_HVT U3 ( .A1(inpBus[0]), .A2(inpBus[2]), .A3(inpBus[4]), .A4(n1), .Y(
+        n2) );
+endmodule
+
+
+module DecodeChk_IO_SIZE6_CONST_VALUE43 ( result, inpBus, enable );
+  input [5:0] inpBus;
+  input enable;
+  output result;
+  wire   n1, n2;
+
+  NAND4X1_HVT U1 ( .A1(enable), .A2(inpBus[0]), .A3(inpBus[1]), .A4(inpBus[3]), 
+        .Y(n1) );
+  INVX0_HVT U2 ( .A(inpBus[5]), .Y(n2) );
+  NOR4X0_HVT U3 ( .A1(inpBus[2]), .A2(inpBus[4]), .A3(n2), .A4(n1), .Y(result)
+         );
+endmodule
+
+
+module DecodeChk_IO_SIZE6_CONST_VALUE44 ( result, inpBus, enable );
+  input [5:0] inpBus;
+  input enable;
+  output result;
+  wire   n1, n2;
+
+  INVX0_HVT U1 ( .A(inpBus[5]), .Y(n1) );
+  AND4X2_HVT U2 ( .A1(enable), .A2(inpBus[2]), .A3(inpBus[3]), .A4(n2), .Y(
+        result) );
+  NOR4X0_HVT U3 ( .A1(inpBus[0]), .A2(inpBus[1]), .A3(inpBus[4]), .A4(n1), .Y(
+        n2) );
+endmodule
+
+
+module DecodeChk_IO_SIZE6_CONST_VALUE45 ( result, inpBus, enable );
+  input [5:0] inpBus;
+  input enable;
+  output result;
+  wire   n1, n2;
+
+  NAND4X1_HVT U1 ( .A1(enable), .A2(inpBus[0]), .A3(inpBus[2]), .A4(inpBus[3]), 
+        .Y(n1) );
+  INVX0_HVT U2 ( .A(inpBus[5]), .Y(n2) );
+  NOR4X0_HVT U3 ( .A1(inpBus[1]), .A2(inpBus[4]), .A3(n2), .A4(n1), .Y(result)
+         );
+endmodule
+
+
+module DecodeChk_IO_SIZE6_CONST_VALUE46 ( result, inpBus, enable );
+  input [5:0] inpBus;
+  input enable;
+  output result;
+  wire   n1, n2;
+
+  NAND4X1_HVT U1 ( .A1(enable), .A2(inpBus[1]), .A3(inpBus[2]), .A4(inpBus[3]), 
+        .Y(n1) );
+  INVX0_HVT U2 ( .A(inpBus[5]), .Y(n2) );
+  NOR4X0_HVT U3 ( .A1(inpBus[0]), .A2(inpBus[4]), .A3(n2), .A4(n1), .Y(result)
+         );
+endmodule
+
+
+module DecodeChk_IO_SIZE6_CONST_VALUE47 ( result, inpBus, enable );
+  input [5:0] inpBus;
+  input enable;
+  output result;
+  wire   n1, n2;
+
+  INVX0_HVT U1 ( .A(inpBus[4]), .Y(n1) );
+  AND4X1_LVT U2 ( .A1(inpBus[3]), .A2(inpBus[5]), .A3(n2), .A4(n1), .Y(result)
+         );
+  AND4X2_HVT U3 ( .A1(inpBus[0]), .A2(inpBus[2]), .A3(inpBus[1]), .A4(enable), 
+        .Y(n2) );
+endmodule
+
+
+module DecodeChk_IO_SIZE6_CONST_VALUE48 ( result, inpBus, enable );
+  input [5:0] inpBus;
+  input enable;
+  output result;
+  wire   n1;
+
+  AND4X2_HVT U1 ( .A1(inpBus[4]), .A2(inpBus[5]), .A3(enable), .A4(n1), .Y(
+        result) );
+  NOR4X0_HVT U2 ( .A1(inpBus[0]), .A2(inpBus[1]), .A3(inpBus[2]), .A4(
+        inpBus[3]), .Y(n1) );
+endmodule
+
+
+module DecodeChk_IO_SIZE6_CONST_VALUE49 ( result, inpBus, enable );
+  input [5:0] inpBus;
+  input enable;
+  output result;
+  wire   n1, n2;
+
+  INVX0_HVT U1 ( .A(inpBus[5]), .Y(n1) );
+  AND4X2_HVT U2 ( .A1(enable), .A2(inpBus[0]), .A3(inpBus[4]), .A4(n2), .Y(
+        result) );
+  NOR4X0_HVT U3 ( .A1(inpBus[1]), .A2(inpBus[2]), .A3(inpBus[3]), .A4(n1), .Y(
+        n2) );
+endmodule
+
+
+module DecodeChk_IO_SIZE6_CONST_VALUE50 ( result, inpBus, enable );
+  input [5:0] inpBus;
+  input enable;
+  output result;
+  wire   n1, n2;
+
+  INVX0_HVT U1 ( .A(inpBus[5]), .Y(n1) );
+  AND4X2_HVT U2 ( .A1(enable), .A2(inpBus[1]), .A3(inpBus[4]), .A4(n2), .Y(
+        result) );
+  NOR4X0_HVT U3 ( .A1(inpBus[0]), .A2(inpBus[2]), .A3(inpBus[3]), .A4(n1), .Y(
+        n2) );
+endmodule
+
+
+module DecodeChk_IO_SIZE6_CONST_VALUE51 ( result, inpBus, enable );
+  input [5:0] inpBus;
+  input enable;
+  output result;
+  wire   n1, n2;
+
+  NAND4X1_HVT U1 ( .A1(enable), .A2(inpBus[0]), .A3(inpBus[1]), .A4(inpBus[4]), 
+        .Y(n1) );
+  INVX0_HVT U2 ( .A(inpBus[5]), .Y(n2) );
+  NOR4X0_HVT U3 ( .A1(inpBus[2]), .A2(inpBus[3]), .A3(n2), .A4(n1), .Y(result)
+         );
+endmodule
+
+
+module DecodeChk_IO_SIZE6_CONST_VALUE52 ( result, inpBus, enable );
+  input [5:0] inpBus;
+  input enable;
+  output result;
+  wire   n1, n2;
+
+  INVX0_HVT U1 ( .A(inpBus[5]), .Y(n1) );
+  AND4X2_HVT U2 ( .A1(enable), .A2(inpBus[2]), .A3(inpBus[4]), .A4(n2), .Y(
+        result) );
+  NOR4X0_HVT U3 ( .A1(inpBus[0]), .A2(inpBus[1]), .A3(inpBus[3]), .A4(n1), .Y(
+        n2) );
+endmodule
+
+
+module DecodeChk_IO_SIZE6_CONST_VALUE53 ( result, inpBus, enable );
+  input [5:0] inpBus;
+  input enable;
+  output result;
+  wire   n1, n2;
+
+  NAND4X1_HVT U1 ( .A1(enable), .A2(inpBus[0]), .A3(inpBus[2]), .A4(inpBus[4]), 
+        .Y(n1) );
+  INVX0_HVT U2 ( .A(inpBus[5]), .Y(n2) );
+  NOR4X0_HVT U3 ( .A1(inpBus[1]), .A2(inpBus[3]), .A3(n2), .A4(n1), .Y(result)
+         );
+endmodule
+
+
+module DecodeChk_IO_SIZE6_CONST_VALUE54 ( result, inpBus, enable );
+  input [5:0] inpBus;
+  input enable;
+  output result;
+  wire   n1, n2;
+
+  NAND4X1_HVT U1 ( .A1(enable), .A2(inpBus[1]), .A3(inpBus[2]), .A4(inpBus[4]), 
+        .Y(n1) );
+  INVX0_HVT U2 ( .A(inpBus[5]), .Y(n2) );
+  NOR4X0_HVT U3 ( .A1(inpBus[0]), .A2(inpBus[3]), .A3(n2), .A4(n1), .Y(result)
+         );
+endmodule
+
+
+module DecodeChk_IO_SIZE6_CONST_VALUE55 ( result, inpBus, enable );
+  input [5:0] inpBus;
+  input enable;
+  output result;
+  wire   n1, n2;
+
+  INVX0_HVT U1 ( .A(inpBus[3]), .Y(n1) );
+  AND4X1_LVT U2 ( .A1(inpBus[4]), .A2(inpBus[5]), .A3(n2), .A4(n1), .Y(result)
+         );
+  AND4X2_HVT U3 ( .A1(inpBus[0]), .A2(inpBus[2]), .A3(inpBus[1]), .A4(enable), 
+        .Y(n2) );
+endmodule
+
+
+module DecodeChk_IO_SIZE6_CONST_VALUE56 ( result, inpBus, enable );
+  input [5:0] inpBus;
+  input enable;
+  output result;
+  wire   n1, n2;
+
+  INVX0_HVT U1 ( .A(inpBus[5]), .Y(n1) );
+  AND4X2_HVT U2 ( .A1(enable), .A2(inpBus[3]), .A3(inpBus[4]), .A4(n2), .Y(
+        result) );
+  NOR4X0_HVT U3 ( .A1(inpBus[0]), .A2(inpBus[1]), .A3(inpBus[2]), .A4(n1), .Y(
+        n2) );
+endmodule
+
+
+module DecodeChk_IO_SIZE6_CONST_VALUE57 ( result, inpBus, enable );
+  input [5:0] inpBus;
+  input enable;
+  output result;
+  wire   n1, n2;
+
+  NAND4X1_HVT U1 ( .A1(enable), .A2(inpBus[0]), .A3(inpBus[3]), .A4(inpBus[4]), 
+        .Y(n1) );
+  INVX0_HVT U2 ( .A(inpBus[5]), .Y(n2) );
+  NOR4X0_HVT U3 ( .A1(inpBus[1]), .A2(inpBus[2]), .A3(n2), .A4(n1), .Y(result)
+         );
+endmodule
+
+
+module DecodeChk_IO_SIZE6_CONST_VALUE58 ( result, inpBus, enable );
+  input [5:0] inpBus;
+  input enable;
+  output result;
+  wire   n1, n2;
+
+  NAND4X1_HVT U1 ( .A1(enable), .A2(inpBus[1]), .A3(inpBus[3]), .A4(inpBus[4]), 
+        .Y(n1) );
+  INVX0_HVT U2 ( .A(inpBus[5]), .Y(n2) );
+  NOR4X0_HVT U3 ( .A1(inpBus[0]), .A2(inpBus[2]), .A3(n2), .A4(n1), .Y(result)
+         );
+endmodule
+
+
+module DecodeChk_IO_SIZE6_CONST_VALUE59 ( result, inpBus, enable );
+  input [5:0] inpBus;
+  input enable;
+  output result;
+  wire   n1, n2;
+
+  INVX0_HVT U1 ( .A(inpBus[2]), .Y(n1) );
+  AND4X1_LVT U2 ( .A1(inpBus[4]), .A2(inpBus[5]), .A3(n2), .A4(n1), .Y(result)
+         );
+  AND4X2_HVT U3 ( .A1(inpBus[0]), .A2(inpBus[3]), .A3(inpBus[1]), .A4(enable), 
+        .Y(n2) );
+endmodule
+
+
+module DecodeChk_IO_SIZE6_CONST_VALUE60 ( result, inpBus, enable );
+  input [5:0] inpBus;
+  input enable;
+  output result;
+  wire   n1, n2;
+
+  NAND4X1_HVT U1 ( .A1(enable), .A2(inpBus[2]), .A3(inpBus[3]), .A4(inpBus[4]), 
+        .Y(n1) );
+  INVX0_HVT U2 ( .A(inpBus[5]), .Y(n2) );
+  NOR4X0_HVT U3 ( .A1(inpBus[0]), .A2(inpBus[1]), .A3(n2), .A4(n1), .Y(result)
+         );
+endmodule
+
+
+module DecodeChk_IO_SIZE6_CONST_VALUE61 ( result, inpBus, enable );
+  input [5:0] inpBus;
+  input enable;
+  output result;
+  wire   n1, n2;
+
+  INVX0_HVT U1 ( .A(inpBus[1]), .Y(n1) );
+  AND4X2_HVT U2 ( .A1(inpBus[4]), .A2(inpBus[5]), .A3(n2), .A4(n1), .Y(result)
+         );
+  AND4X1_LVT U3 ( .A1(inpBus[0]), .A2(inpBus[3]), .A3(inpBus[2]), .A4(enable), 
+        .Y(n2) );
+endmodule
+
+
+module DecodeChk_IO_SIZE6_CONST_VALUE62 ( result, inpBus, enable );
+  input [5:0] inpBus;
+  input enable;
+  output result;
+  wire   n1, n2;
+
+  INVX0_HVT U1 ( .A(inpBus[0]), .Y(n1) );
+  AND4X2_HVT U2 ( .A1(inpBus[4]), .A2(inpBus[5]), .A3(n2), .A4(n1), .Y(result)
+         );
+  AND4X1_LVT U3 ( .A1(inpBus[1]), .A2(inpBus[3]), .A3(inpBus[2]), .A4(enable), 
+        .Y(n2) );
+endmodule
+
+
+module DecodeChk_IO_SIZE6_CONST_VALUE63 ( result, inpBus, enable );
+  input [5:0] inpBus;
+  input enable;
+  output result;
+  wire   n1, n2, n3, n4;
+
+  NAND4X1_HVT U1 ( .A1(inpBus[5]), .A2(inpBus[4]), .A3(enable), .A4(inpBus[3]), 
+        .Y(n1) );
+  INVX0_HVT U2 ( .A(inpBus[2]), .Y(n4) );
+  INVX0_HVT U3 ( .A(inpBus[1]), .Y(n3) );
+  INVX0_HVT U4 ( .A(inpBus[0]), .Y(n2) );
+  NOR4X0_HVT U5 ( .A1(n4), .A2(n3), .A3(n2), .A4(n1), .Y(result) );
+endmodule
+
+
+module CombCloud_FANOUT64_IO_SIZE6 ( combOut, inpBus, enable );
+  output [63:0] combOut;
+  input [5:0] inpBus;
+  input enable;
+
+
+  DecodeChk_IO_SIZE6_CONST_VALUE0 genblk1_0__dchk ( .result(combOut[0]), 
+        .inpBus(inpBus), .enable(enable) );
+  DecodeChk_IO_SIZE6_CONST_VALUE1 genblk1_1__dchk ( .result(combOut[1]), 
+        .inpBus(inpBus), .enable(enable) );
+  DecodeChk_IO_SIZE6_CONST_VALUE2 genblk1_2__dchk ( .result(combOut[2]), 
+        .inpBus(inpBus), .enable(enable) );
+  DecodeChk_IO_SIZE6_CONST_VALUE3 genblk1_3__dchk ( .result(combOut[3]), 
+        .inpBus(inpBus), .enable(enable) );
+  DecodeChk_IO_SIZE6_CONST_VALUE4 genblk1_4__dchk ( .result(combOut[4]), 
+        .inpBus(inpBus), .enable(enable) );
+  DecodeChk_IO_SIZE6_CONST_VALUE5 genblk1_5__dchk ( .result(combOut[5]), 
+        .inpBus(inpBus), .enable(enable) );
+  DecodeChk_IO_SIZE6_CONST_VALUE6 genblk1_6__dchk ( .result(combOut[6]), 
+        .inpBus(inpBus), .enable(enable) );
+  DecodeChk_IO_SIZE6_CONST_VALUE7 genblk1_7__dchk ( .result(combOut[7]), 
+        .inpBus(inpBus), .enable(enable) );
+  DecodeChk_IO_SIZE6_CONST_VALUE8 genblk1_8__dchk ( .result(combOut[8]), 
+        .inpBus(inpBus), .enable(enable) );
+  DecodeChk_IO_SIZE6_CONST_VALUE9 genblk1_9__dchk ( .result(combOut[9]), 
+        .inpBus(inpBus), .enable(enable) );
+  DecodeChk_IO_SIZE6_CONST_VALUE10 genblk1_10__dchk ( .result(combOut[10]), 
+        .inpBus(inpBus), .enable(enable) );
+  DecodeChk_IO_SIZE6_CONST_VALUE11 genblk1_11__dchk ( .result(combOut[11]), 
+        .inpBus(inpBus), .enable(enable) );
+  DecodeChk_IO_SIZE6_CONST_VALUE12 genblk1_12__dchk ( .result(combOut[12]), 
+        .inpBus(inpBus), .enable(enable) );
+  DecodeChk_IO_SIZE6_CONST_VALUE13 genblk1_13__dchk ( .result(combOut[13]), 
+        .inpBus(inpBus), .enable(enable) );
+  DecodeChk_IO_SIZE6_CONST_VALUE14 genblk1_14__dchk ( .result(combOut[14]), 
+        .inpBus(inpBus), .enable(enable) );
+  DecodeChk_IO_SIZE6_CONST_VALUE15 genblk1_15__dchk ( .result(combOut[15]), 
+        .inpBus(inpBus), .enable(enable) );
+  DecodeChk_IO_SIZE6_CONST_VALUE16 genblk1_16__dchk ( .result(combOut[16]), 
+        .inpBus(inpBus), .enable(enable) );
+  DecodeChk_IO_SIZE6_CONST_VALUE17 genblk1_17__dchk ( .result(combOut[17]), 
+        .inpBus(inpBus), .enable(enable) );
+  DecodeChk_IO_SIZE6_CONST_VALUE18 genblk1_18__dchk ( .result(combOut[18]), 
+        .inpBus(inpBus), .enable(enable) );
+  DecodeChk_IO_SIZE6_CONST_VALUE19 genblk1_19__dchk ( .result(combOut[19]), 
+        .inpBus(inpBus), .enable(enable) );
+  DecodeChk_IO_SIZE6_CONST_VALUE20 genblk1_20__dchk ( .result(combOut[20]), 
+        .inpBus(inpBus), .enable(enable) );
+  DecodeChk_IO_SIZE6_CONST_VALUE21 genblk1_21__dchk ( .result(combOut[21]), 
+        .inpBus(inpBus), .enable(enable) );
+  DecodeChk_IO_SIZE6_CONST_VALUE22 genblk1_22__dchk ( .result(combOut[22]), 
+        .inpBus(inpBus), .enable(enable) );
+  DecodeChk_IO_SIZE6_CONST_VALUE23 genblk1_23__dchk ( .result(combOut[23]), 
+        .inpBus(inpBus), .enable(enable) );
+  DecodeChk_IO_SIZE6_CONST_VALUE24 genblk1_24__dchk ( .result(combOut[24]), 
+        .inpBus(inpBus), .enable(enable) );
+  DecodeChk_IO_SIZE6_CONST_VALUE25 genblk1_25__dchk ( .result(combOut[25]), 
+        .inpBus(inpBus), .enable(enable) );
+  DecodeChk_IO_SIZE6_CONST_VALUE26 genblk1_26__dchk ( .result(combOut[26]), 
+        .inpBus(inpBus), .enable(enable) );
+  DecodeChk_IO_SIZE6_CONST_VALUE27 genblk1_27__dchk ( .result(combOut[27]), 
+        .inpBus(inpBus), .enable(enable) );
+  DecodeChk_IO_SIZE6_CONST_VALUE28 genblk1_28__dchk ( .result(combOut[28]), 
+        .inpBus(inpBus), .enable(enable) );
+  DecodeChk_IO_SIZE6_CONST_VALUE29 genblk1_29__dchk ( .result(combOut[29]), 
+        .inpBus(inpBus), .enable(enable) );
+  DecodeChk_IO_SIZE6_CONST_VALUE30 genblk1_30__dchk ( .result(combOut[30]), 
+        .inpBus(inpBus), .enable(enable) );
+  DecodeChk_IO_SIZE6_CONST_VALUE31 genblk1_31__dchk ( .result(combOut[31]), 
+        .inpBus(inpBus), .enable(enable) );
+  DecodeChk_IO_SIZE6_CONST_VALUE32 genblk1_32__dchk ( .result(combOut[32]), 
+        .inpBus(inpBus), .enable(enable) );
+  DecodeChk_IO_SIZE6_CONST_VALUE33 genblk1_33__dchk ( .result(combOut[33]), 
+        .inpBus(inpBus), .enable(enable) );
+  DecodeChk_IO_SIZE6_CONST_VALUE34 genblk1_34__dchk ( .result(combOut[34]), 
+        .inpBus(inpBus), .enable(enable) );
+  DecodeChk_IO_SIZE6_CONST_VALUE35 genblk1_35__dchk ( .result(combOut[35]), 
+        .inpBus(inpBus), .enable(enable) );
+  DecodeChk_IO_SIZE6_CONST_VALUE36 genblk1_36__dchk ( .result(combOut[36]), 
+        .inpBus(inpBus), .enable(enable) );
+  DecodeChk_IO_SIZE6_CONST_VALUE37 genblk1_37__dchk ( .result(combOut[37]), 
+        .inpBus(inpBus), .enable(enable) );
+  DecodeChk_IO_SIZE6_CONST_VALUE38 genblk1_38__dchk ( .result(combOut[38]), 
+        .inpBus(inpBus), .enable(enable) );
+  DecodeChk_IO_SIZE6_CONST_VALUE39 genblk1_39__dchk ( .result(combOut[39]), 
+        .inpBus(inpBus), .enable(enable) );
+  DecodeChk_IO_SIZE6_CONST_VALUE40 genblk1_40__dchk ( .result(combOut[40]), 
+        .inpBus(inpBus), .enable(enable) );
+  DecodeChk_IO_SIZE6_CONST_VALUE41 genblk1_41__dchk ( .result(combOut[41]), 
+        .inpBus(inpBus), .enable(enable) );
+  DecodeChk_IO_SIZE6_CONST_VALUE42 genblk1_42__dchk ( .result(combOut[42]), 
+        .inpBus(inpBus), .enable(enable) );
+  DecodeChk_IO_SIZE6_CONST_VALUE43 genblk1_43__dchk ( .result(combOut[43]), 
+        .inpBus(inpBus), .enable(enable) );
+  DecodeChk_IO_SIZE6_CONST_VALUE44 genblk1_44__dchk ( .result(combOut[44]), 
+        .inpBus(inpBus), .enable(enable) );
+  DecodeChk_IO_SIZE6_CONST_VALUE45 genblk1_45__dchk ( .result(combOut[45]), 
+        .inpBus(inpBus), .enable(enable) );
+  DecodeChk_IO_SIZE6_CONST_VALUE46 genblk1_46__dchk ( .result(combOut[46]), 
+        .inpBus(inpBus), .enable(enable) );
+  DecodeChk_IO_SIZE6_CONST_VALUE47 genblk1_47__dchk ( .result(combOut[47]), 
+        .inpBus(inpBus), .enable(enable) );
+  DecodeChk_IO_SIZE6_CONST_VALUE48 genblk1_48__dchk ( .result(combOut[48]), 
+        .inpBus(inpBus), .enable(enable) );
+  DecodeChk_IO_SIZE6_CONST_VALUE49 genblk1_49__dchk ( .result(combOut[49]), 
+        .inpBus(inpBus), .enable(enable) );
+  DecodeChk_IO_SIZE6_CONST_VALUE50 genblk1_50__dchk ( .result(combOut[50]), 
+        .inpBus(inpBus), .enable(enable) );
+  DecodeChk_IO_SIZE6_CONST_VALUE51 genblk1_51__dchk ( .result(combOut[51]), 
+        .inpBus(inpBus), .enable(enable) );
+  DecodeChk_IO_SIZE6_CONST_VALUE52 genblk1_52__dchk ( .result(combOut[52]), 
+        .inpBus(inpBus), .enable(enable) );
+  DecodeChk_IO_SIZE6_CONST_VALUE53 genblk1_53__dchk ( .result(combOut[53]), 
+        .inpBus(inpBus), .enable(enable) );
+  DecodeChk_IO_SIZE6_CONST_VALUE54 genblk1_54__dchk ( .result(combOut[54]), 
+        .inpBus(inpBus), .enable(enable) );
+  DecodeChk_IO_SIZE6_CONST_VALUE55 genblk1_55__dchk ( .result(combOut[55]), 
+        .inpBus(inpBus), .enable(enable) );
+  DecodeChk_IO_SIZE6_CONST_VALUE56 genblk1_56__dchk ( .result(combOut[56]), 
+        .inpBus(inpBus), .enable(enable) );
+  DecodeChk_IO_SIZE6_CONST_VALUE57 genblk1_57__dchk ( .result(combOut[57]), 
+        .inpBus(inpBus), .enable(enable) );
+  DecodeChk_IO_SIZE6_CONST_VALUE58 genblk1_58__dchk ( .result(combOut[58]), 
+        .inpBus(inpBus), .enable(enable) );
+  DecodeChk_IO_SIZE6_CONST_VALUE59 genblk1_59__dchk ( .result(combOut[59]), 
+        .inpBus(inpBus), .enable(enable) );
+  DecodeChk_IO_SIZE6_CONST_VALUE60 genblk1_60__dchk ( .result(combOut[60]), 
+        .inpBus(inpBus), .enable(enable) );
+  DecodeChk_IO_SIZE6_CONST_VALUE61 genblk1_61__dchk ( .result(combOut[61]), 
+        .inpBus(inpBus), .enable(enable) );
+  DecodeChk_IO_SIZE6_CONST_VALUE62 genblk1_62__dchk ( .result(combOut[62]), 
+        .inpBus(inpBus), .enable(enable) );
+  DecodeChk_IO_SIZE6_CONST_VALUE63 genblk1_63__dchk ( .result(combOut[63]), 
+        .inpBus(inpBus), .enable(enable) );
+endmodule
+
+
+module Criticalizer ( result, inpValue );
+  input inpValue;
+  output result;
+  wire   N0, N1, N2, N3, N4, N5, N6, N7, n1, n2, n3, n4;
+
+  ADD_UNS_OP add_75 ( .A({1'b1, 1'b1, inpValue, 1'b0, 1'b1, 1'b0}), .B({1'b1, 
+        1'b0, 1'b1, 1'b0, 1'b1, 1'b0, 1'b0}), .Z({N7, N6, N5, N4, N3, N2, N1, 
+        N0}) );
+  XOR2X1_LVT U3 ( .A1(N7), .A2(N6), .Y(n2) );
+  XOR3X1_LVT U4 ( .A1(N1), .A2(N0), .A3(n1), .Y(n4) );
+  XOR2X1_LVT U5 ( .A1(N3), .A2(N2), .Y(n1) );
+  XOR2X1_LVT U6 ( .A1(n4), .A2(n3), .Y(result) );
+  XOR3X1_LVT U7 ( .A1(N5), .A2(N4), .A3(n2), .Y(n3) );
+endmodule
+
+
+module Part5 ( outBus, inpBus, enable, clk );
+  output [63:0] outBus;
+  input [5:0] inpBus;
+  input enable, clk;
+  wire   criticalOut, n1, n2;
+  wire   [63:0] combOut;
+
+  BigReg_FANOUT64 breg ( .regOut(outBus), .regIn({combOut[63:1], criticalOut}), 
+        .clk(clk) );
+  CombCloud_FANOUT64_IO_SIZE6 ccloud ( .combOut(combOut), .inpBus(inpBus), 
+        .enable(n2) );
+  Criticalizer critical0 ( .result(criticalOut), .inpValue(combOut[0]) );
+  INVX4_HVT U1 ( .A(enable), .Y(n1) );
+  INVX16_HVT U2 ( .A(n1), .Y(n2) );
+endmodule
+

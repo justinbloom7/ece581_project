@@ -1,0 +1,137 @@
+/////////////////////////////////////////////////////////////
+// Created by: Synopsys DC Ultra(TM) in wire load mode
+// Version   : P-2019.03-SP1-1
+// Date      : Sat Mar 13 18:11:19 2021
+/////////////////////////////////////////////////////////////
+
+
+module ConstProp ( outA, inpA, inpG, inpB );
+  input inpA, inpG, inpB;
+  output outA;
+
+
+  AND2X1_HVT U1 ( .A1(inpB), .A2(inpA), .Y(outA) );
+endmodule
+
+
+module ConstPropC ( outA, inpA, inpB );
+  input inpA, inpB;
+  output outA;
+
+
+  ConstProp cp ( .outA(outA), .inpA(inpA), .inpG(1'b0), .inpB(inpB) );
+endmodule
+
+
+module DummyLogic_RSIZE2 ( dummy, clk, reset );
+  output [1:0] dummy;
+  input clk, reset;
+  wire   N2, n3, n1, n2;
+
+  SDFFARX1_HVT dummy_reg_0_ ( .D(n1), .SI(1'b0), .SE(1'b0), .CLK(clk), .RSTB(
+        n3), .Q(dummy[0]), .QN(n1) );
+  SDFFARX1_HVT dummy_reg_1_ ( .D(N2), .SI(1'b0), .SE(1'b0), .CLK(clk), .RSTB(
+        n3), .Q(dummy[1]), .QN(n2) );
+  AO22X1_LVT U3 ( .A1(dummy[0]), .A2(n2), .A3(n1), .A4(dummy[1]), .Y(N2) );
+  INVX0_HVT U4 ( .A(reset), .Y(n3) );
+endmodule
+
+
+module EqualOppProp ( outA, outB, inpA, inpB, clk, reset );
+  input inpA, inpB, clk, reset;
+  output outA, outB;
+
+  wire   [1:0] dummy;
+
+  DummyLogic_RSIZE2 dl ( .dummy(dummy), .clk(clk), .reset(reset) );
+  AND2X1_HVT U1 ( .A1(dummy[1]), .A2(inpB), .Y(outA) );
+  AND2X1_HVT U2 ( .A1(dummy[0]), .A2(inpB), .Y(outB) );
+endmodule
+
+
+module EqualOppPropC ( outA, outB, inpA, clk, reset );
+  input inpA, clk, reset;
+  output outA, outB;
+  wire   n1;
+
+  EqualOppProp eop ( .outA(outA), .outB(outB), .inpA(1'b0), .inpB(n1), .clk(
+        clk), .reset(reset) );
+  INVX0_HVT U1 ( .A(inpA), .Y(n1) );
+endmodule
+
+
+module DummyLogic_1 ( dummy, clk, reset );
+  output [0:0] dummy;
+  input clk, reset;
+  wire   n2, n1;
+
+  SDFFARX1_HVT dummy_reg_0_ ( .D(n1), .SI(1'b0), .SE(1'b0), .CLK(clk), .RSTB(
+        n2), .Q(dummy[0]), .QN(n1) );
+  INVX0_HVT U4 ( .A(reset), .Y(n2) );
+endmodule
+
+
+module UnconnProp ( outA, inpA, clk, reset );
+  input inpA, clk, reset;
+  output outA;
+
+
+  DummyLogic_1 dl ( .dummy(outA), .clk(clk), .reset(reset) );
+endmodule
+
+
+module UnconnPropC ( outA, inpA, inpB, clk, reset );
+  input inpA, inpB, clk, reset;
+  output outA;
+
+
+  UnconnProp up ( .outA(outA), .inpA(1'b0), .clk(clk), .reset(reset) );
+endmodule
+
+
+module DummyLogic_0 ( dummy, clk, reset );
+  output [0:0] dummy;
+  input clk, reset;
+  wire   n1, n5;
+
+  SDFFARX1_HVT dummy_reg_0_ ( .D(n1), .SI(1'b0), .SE(1'b0), .CLK(clk), .RSTB(
+        n5), .Q(dummy[0]), .QN(n1) );
+  INVX0_HVT U4 ( .A(reset), .Y(n5) );
+endmodule
+
+
+module InvPush ( outA, clk, reset, inpA_BAR );
+  input clk, reset, inpA_BAR;
+  output outA;
+  wire   dummy;
+
+  DummyLogic_0 dl ( .dummy(dummy), .clk(clk), .reset(reset) );
+  AND2X1_HVT U1 ( .A1(dummy), .A2(inpA_BAR), .Y(outA) );
+endmodule
+
+
+module InvPushC ( outA, inpA, clk, reset );
+  input inpA, clk, reset;
+  output outA;
+
+
+  InvPush invP ( .outA(outA), .clk(clk), .reset(reset), .inpA_BAR(inpA) );
+endmodule
+
+
+module Part4 ( outBus, inpBus, clk, reset );
+  output [4:0] outBus;
+  input [5:0] inpBus;
+  input clk, reset;
+
+
+  ConstPropC constProp ( .outA(outBus[4]), .inpA(inpBus[5]), .inpB(inpBus[4])
+         );
+  EqualOppPropC equalOppProp ( .outA(outBus[3]), .outB(outBus[2]), .inpA(
+        inpBus[3]), .clk(clk), .reset(reset) );
+  UnconnPropC unconnProp ( .outA(outBus[1]), .inpA(1'b0), .inpB(1'b0), .clk(
+        clk), .reset(reset) );
+  InvPushC invPush ( .outA(outBus[0]), .inpA(inpBus[0]), .clk(clk), .reset(
+        reset) );
+endmodule
+

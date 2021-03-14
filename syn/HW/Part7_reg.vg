@@ -1,0 +1,16 @@
+/////////////////////////////////////////////////////////////
+// Created by: Synopsys DC Ultra(TM) in wire load mode
+// Version   : P-2019.03-SP1-1
+// Date      : Sat Mar 13 18:30:36 2021
+/////////////////////////////////////////////////////////////
+
+
+module Part7 ( result, storeVal, clk, nset );
+  input storeVal, clk, nset;
+  output result;
+
+
+  SDFFASX1_HVT result_reg ( .D(storeVal), .SI(1'b0), .SE(1'b0), .CLK(clk), 
+        .SETB(nset), .Q(result) );
+endmodule
+
